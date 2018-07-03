@@ -10,8 +10,8 @@ class Artist
   end
 
   def add_song(song)
-    @songs << song unless @songs.include?(song) 
-    song.artist = self
+    @songs << song unless @songs.include?(song)
+    song.artist = self unless song.artist == self
   end
 
   def save
