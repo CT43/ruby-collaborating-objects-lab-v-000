@@ -23,6 +23,7 @@ class Artist
 
   def self.create(name)
     Artist.new(name)
+    self.save
   end
 
 
