@@ -17,6 +17,7 @@ class Song
     artist_name = file_array[0]
     song = self.new(song_title)
     song.artist = Artist.find_or_create_by_name(artist_name)
+    song.save
     song
   end
 
