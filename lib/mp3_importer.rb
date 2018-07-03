@@ -9,4 +9,7 @@ class MP3Importer
     Dir.entries(path).reject{|i| i == '.' || i == '..'}
   end
 
+  def import 
+    files.each {|i| Song.new_by_filename(i)}
+
 end
