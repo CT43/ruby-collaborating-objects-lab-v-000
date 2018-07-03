@@ -11,10 +11,11 @@ class Song
   def save
     @@all << self
     self
-  end 
+  end
 
   def initialize(name)
     @name = name
+    @artist = nil
   end
 
   def artist_name=(name)
