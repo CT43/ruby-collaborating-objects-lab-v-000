@@ -21,8 +21,9 @@ class Artist
     @@all
   end
 
-  def self.create(name)
-    Artist.new(name)
+  def artist_name=(artist)
+    @artist = artist
+    
   end
 
 
@@ -36,6 +37,6 @@ class Artist
   def print_songs
     @songs.each do |song|
       puts song.name
-    end 
+    end
   end
 end
