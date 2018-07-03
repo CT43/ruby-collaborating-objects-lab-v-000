@@ -27,10 +27,10 @@ class Artist
     self.new(name).save
   end
 
-  def self.find_by_name(name) 
-    @@all.detect do |artist| 
-      artist.name == name 
-    end 
+  def self.find_by_name(name)
+    @@all.detect do |artist|
+      artist.name == name
+    end
   end 
 
 
