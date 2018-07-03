@@ -21,10 +21,6 @@ class Artist
     @@all
   end
 
-  def artist_name=(artist)
-    @artist = artist
-    
-  end
 
 
   def self.find_or_create_by_name(name)
